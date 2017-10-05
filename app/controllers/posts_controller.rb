@@ -1,5 +1,5 @@
-class PostsController < InheritedResources::Base
-	def index
+class PostsController < ApplicationController
+  def index
     @posts = Post.all.order('created_at DESC')
     @categories = Category.all
   end
@@ -12,11 +12,10 @@ class PostsController < InheritedResources::Base
   private
 
     def post_params
-      params.require(:post).permit(:title, :overview, :content)
+      params.require(:post).permit(:title, :content)
     end
 
     def category_params
       params.require(:category).permit(:name)
     end
 end
-
