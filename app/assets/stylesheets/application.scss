@@ -56,10 +56,11 @@ body{
 	font-family: 'Quicksand', sans-serif;
   background:#fff;
   font-size: 1rem;
+  color: #191a1b;
 }
 
 h1 {
-  color:#000;
+  color:#191a1b;
 }
 
 a {
@@ -104,7 +105,15 @@ ul {
   width: 100%;
   top:0; 
   z-index:1;
-  background: #000;
+  background: red; /* For browsers that do not support gradients */
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  /* Opera 11.1 to 12.0 */
+  background: -o-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  /* Firefox 3.6 to 15 */
+  background: -moz-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  /* Standard syntax */
+  background: radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
   padding-top: 0em;
 }
 
@@ -120,7 +129,15 @@ footer {
   width:100%;
 	margin-top: 2em;
 	height: auto;
-	background-color: #434c56;
+	background: red; /* For browsers that do not support gradients */
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  /* Opera 11.1 to 12.0 */
+  background: -o-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  /* Firefox 3.6 to 15 */
+  background: -moz-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  /* Standard syntax */
+  background: radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
 	color: #fff;
 	text-align: center;
 	padding-top: 2em;

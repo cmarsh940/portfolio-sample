@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-4">
             <div class="media">
-                <img src="/assets/img2.jpg" id="picture">
+                <img src="/assets/2.jpg" id="picture">
             </div>
         </div>
         <div class="col-md-8">
@@ -16,21 +16,21 @@
 <div id="skills">
     <div class="container">
         <div class="row">
-            <h2 id="skills-header"><b>MY SKILLS</b></h2>
+            <h2 id="skills-header"><b>SKILLS</b></h2>
         </div>
         <div class="row" id="skills-tools">
             <div class="flex-column">
                 <div class="col-md-12">
                     <div class="skill-projectManagement">
-                        <h4></i><i class="fa fa-cogs" aria-hidden="true"></i><b> Project Management</b></h4>
+                        <h3></i><i class="fa fa-cogs fa-1x" aria-hidden="true"></i><b> Project Management</b></h3>
                         <ul>
-                            <li>Command Line</li>
-                            <li>Git</li>
-                            <li>Github + Gitlab</li>
-                            <li>MAMP</li>
-                            <li>Postico</li>
-                            <li>Postman</li>
-                            <li>Vagrant</li>
+                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Command Line</li>
+                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Git</li>
+                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Github + Gitlab</li>
+                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> MAMP</li>
+                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Postico</li>
+                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Postman</li>
+                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Vagrant</li>
                         </ul>
                     </div>
                 </div>
@@ -38,12 +38,12 @@
             <div class="flex-column">
                 <div class="col-md-12">
                     <div class="skill-database">
-                        <h4><i class="fa fa-database" aria-hidden="true"></i> <b>Database</b></h4>
+                        <h3><i class="fa fa-database fa-1x" aria-hidden="true"></i> <b>Database</b></h3>
                         <ul>
-                            <li>mongoDB</li>
-                            <li>MySQL</li>
-                            <li>SQLite</li>
-                            <li>PostgreSQL</li>
+                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>    mongoDB</li>
+                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>    MySQL</li>
+                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>    SQLite</li>
+                            <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>    PostgreSQL</li>
                         </ul>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
             <div class="col-12">
                 <div class="skills-development">
                     <div class="text-center">
-                        <h4><i class="fa fa-code" aria-hidden="true"></i> Languages/Frameworks</h4>
+                        <h3><i class="fa fa-code fa-1x" aria-hidden="true"></i><b> Languages/Frameworks</b></h3>
                     </div>
                 </div>
                 <div class="row">
@@ -89,18 +89,19 @@
     <div class="col-1"></div>
 </div> --> 
 
-<div class="container"> 
+<div class="container">
+    <div class="row">
+        <h2 id="project-header"><b>RECENT PROJECTS</b></h2>
+    </div> 
     <div class="row">
         <% @posts.each do |post| %>
-            <div class="col-3">
-                <div class="card-deck">
-                    <div class="card md-4">
+            <div class="col-4">
+                <div class="card-columns">
+                    <div class="card">
                         <%= link_to post_path(post) do %>
                             <%= image_tag post.image, class: 'card-img-top' %>
-                            <div class="card-body">
-                                <h3 class="card-title text-center"><%= post.title %></h3>
-                                <p class="card-text"><%= post.subject %></p>
-                                <button type="button" class="btn-sm btn-dark text-center">View</button>
+                            <div class="card-img-overlay">
+                                <h3><b>View Project </b><i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
                             </div>
                         <% end %>
                     </div>
