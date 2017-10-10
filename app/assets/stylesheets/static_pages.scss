@@ -4,19 +4,40 @@
 
 #cam {
 	width: 100%;
+	margin:0em 3em 0em 0em;
 	border: 1px solid black;
 }
 
 
 /*******  ABOUT  ************/
 
+.about-skill {
+    width: 100%;
+    height: auto;
+    margin: 0.5em;
+    display: grid;
+}
+
 #about h2 {
 	margin: 1em;
 }
 
+#about h4 {
+	margin: 0.3em;
+}
+
 #about ul li {
 	list-style-type: none;
+	width: 10%;
+    display: -webkit-inline-box;
+    margin: 1em 2em;
 }
+
+/* #about li {
+	width: 10%;
+    display: -webkit-inline-box;
+} */
+
 
 
 
