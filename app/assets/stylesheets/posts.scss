@@ -12,10 +12,10 @@
 .site-heading {
     font-family: 'Fjalla One', sans-serif;
     font-size: 5rem;
-    margin: 2em auto -1.5em 3.5em;
+    margin: 1.5em auto 0em auto;
     letter-spacing: 0.5rem;
     color: #191a1b;
-        text-shadow: 0rem 1rem 1em rgba(24, 24, 24, 0.2);
+    text-shadow: 0rem 1rem 1em rgba(24, 24, 24, 0.2);
     span {
 	    vertical-align: -webkit-baseline-middle;
         font-size: 10rem;
@@ -31,7 +31,7 @@
     height: auto;
     width: 100%;
     display: inline-block;
-    margin: -13em 0em 3em -7em;
+    margin: 0em 0em -8em 0em;
     /* margin-bottom: 3em;
     margin-left: -7em; */
     -webkit-box-shadow: -5px -2px 12px 2px rgba(24, 24, 24, 0.5);
@@ -53,8 +53,7 @@ h4 {
 
 #top-text {
     font-family: 'Quicksand', sans-serif;
-    margin: auto;
-    line-height: 2em;
+    margin:0em 0em 3em 0em;
     font-size: 3rem;
 
 }
@@ -90,7 +89,7 @@ h4 {
 
 #skills-tools {
     padding: 0.3em;
-    margin: 3em 3em 0em 3em;
+    margin: 3em 3em 0em 10em;
 }
 
 .flex-column {
