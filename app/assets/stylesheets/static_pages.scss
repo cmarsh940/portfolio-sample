@@ -1,15 +1,51 @@
+.skill-box {
+	background: #b7bfc8; /* For browsers that do not support gradients */
+  	/* Safari 5.1 to 6.0 */
+  	background: -webkit-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  	/* Opera 11.1 to 12.0 */
+  	background: -o-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  	/* Firefox 3.6 to 15 */
+  	background: -moz-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  	/* Standard syntax */
+	background: radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+	/* background: #b7bfc8; */
+	padding: 1em 0em 2.5em 0em;
+	color: #fff;
+}
+
 #header {
 	margin-bottom: 2rem;
+	color: #fff;
 }
 
 #cam {
 	width: 100%;
 	margin:0em 3em 0em 0em;
-	border: 1px solid black;
+	border: 1px solid #fff;
 }
 
-
+.space {
+	width: 100%;
+	background: #fff;
+	color: #191a1b;
+	margin-top: -7em;
+}
 /*******  ABOUT  ************/
+#about-main {
+	width: 100%;
+	height: 100%;
+	background: #b7bfc8; /* For browsers that do not support gradients */
+  	/* Safari 5.1 to 6.0 */
+  	background: -webkit-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  	/* Opera 11.1 to 12.0 */
+  	background: -o-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  	/* Firefox 3.6 to 15 */
+  	background: -moz-radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+  	/* Standard syntax */
+	background: radial-gradient(#191a1b, #191a1b 53.78%, #191a1b 71.85%);
+	/* background: #b7bfc8; */
+	overflow: hidden;
+}
 
 .about-skill {
     width: 100%;
@@ -23,7 +59,8 @@
 }
 
 #about h4 {
-	margin: 0.3em;
+    margin-top: 2%;
+    color: black;
 }
 
 #about ul li {
@@ -39,5 +76,26 @@
 } */
 
 
+/************  CONTACT   **************/
 
+#contact{
+  margin: 2em 0em;
+}
+
+
+.contact-group {
+    width: 30%;
+    margin: auto;
+    display: block;
+    vertical-align: top;
+}
+.contact-group .card {
+  padding: 2em 0em;
+}
+
+.contact-group .card-title{
+  width: 100%;
+  height: 4em;
+  margin: auto;
+}
 
